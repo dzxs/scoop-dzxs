@@ -1,0 +1,44 @@
+{
+    "version": "2018.1.5",
+    "homepage": "https://www.jetbrains.com/go/",
+    "url": "https://download.jetbrains.com/go/goland-2018.1.5.zip",
+    "hash": "ba29f006d2516984f923dce22e52091023b6e5e5d72beac282558629ee996a4c",
+    "env_add_path": "bin",
+    "notes": "Please restart your command line for changes to take effect.",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\goland64.exe",
+                [
+                    "bin\\goland64.exe",
+                    "goland"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "bin/goland64.exe",
+                    "GoLand"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\goland.exe",
+            "shortcuts": [
+                [
+                    "bin/goland.exe",
+                    "GoLand"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=GO&latest=true&type=release",
+        "jp": "$..version"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/go/goland-$version.zip",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
