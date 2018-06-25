@@ -1,0 +1,44 @@
+{
+    "version": "2018.1.5",
+    "homepage": "https://www.jetbrains.com/clion/",
+    "url": "https://download.jetbrains.com/cpp/CLion-2018.1.5.zip",
+    "hash": "540390206d59b808f1dda912e38f67f243982e0963686322eec2a1dfc3bba676",
+    "env_add_path": "bin",
+    "notes": "Please restart your command line for changes to take effect.",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\clion64.exe",
+                [
+                    "bin\\clion64.exe",
+                    "clion"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "bin/clion64.exe",
+                    "CLion"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\clion.exe",
+            "shortcuts": [
+                [
+                    "bin/clion.exe",
+                    "CLion"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=GO&latest=true&type=release",
+        "jp": "$..version"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/cpp/CLion-$version.zip",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
