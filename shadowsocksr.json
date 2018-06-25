@@ -17,6 +17,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/shadowsocksrr/shadowsocksr-csharp/releases/download/$version/ShadowsocksR-win-$version.zip",
-	"extract_dir": "ShadowsocksR-win-$version"
+        "extract_dir": "ShadowsocksR-win-$version"
     }
 }
