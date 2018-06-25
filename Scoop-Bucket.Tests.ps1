@@ -71,34 +71,6 @@ describe 'Style constraints for non-binary project files' {
         }
     }
 
-    it 'file newlines are CRLF' -skip:$(-not $files_exist) {
-        $badFiles = @(
-            foreach ($file in $files)
-            {
-                $content = Get-Content -raw $file.FullName
-                if(!$content) {
-                    throw "File contents are null: $($file.FullName)"
-                }
-                $lines = [regex]::split($content, '\r\n')
-                $lineCount = $lines.Count
-
-                for ($i = 0; $i -lt $lineCount; $i++)
-                {
-                    if ( [regex]::match($lines[$i], '\r|\n').success )
-                    {
-                        $file.FullName
-                        break
-                    }
-                }
-            }
-        )
-
-        if ($badFiles.Count -gt 0)
-        {
-            throw "The following files have non-CRLF line endings: `r`n`r`n$($badFiles -join "`r`n")"
-        }
-    }
-
     it 'files have no lines containing trailing whitespace' -skip:$(-not $files_exist) {
         $badLines = @(
             foreach ($file in $files)
