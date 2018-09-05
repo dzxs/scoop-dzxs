@@ -6,7 +6,7 @@
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
     "url": "https://github.com/2dust/v2rayN/releases/download/2.14/v2rayN.exe#/v2rayN.exe",
-    "hash": "",
+    "hash": "8693625501C01869147DD709D8179F0159239C57654F84849221A1FE6F419A3D",
     "bin": "v2rayN.exe",
     "shortcuts": [
         [
@@ -14,7 +14,9 @@
             "v2rayN"
         ]
     ],
-    "persist": "data",
+    "persist": [
+        "guiNConfig.json"
+    ],
     "notes": [
         "Requirements:",
         "Microsoft .NET Framework 4.5 or higher",
