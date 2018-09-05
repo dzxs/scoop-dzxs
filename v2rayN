@@ -1,0 +1,29 @@
+{
+    "homepage": "https://github.com/2dust/v2rayN",
+    "version": "2.14",
+    "license": {
+        "identifier": "GPL-3.0",
+        "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
+    },
+    "url": "https://github.com/2dust/v2rayN/releases/download/2.14/v2rayN.exe#/v2rayN.exe",
+    "hash": "",
+    "bin": "v2rayN.exe",
+    "shortcuts": [
+        [
+            "v2rayN.exe",
+            "v2rayN"
+        ]
+    ],
+    "persist": "data",
+    "notes": [
+        "Requirements:",
+        "Microsoft .NET Framework 4.5 or higher",
+        "Project V core https://github.com/v2ray/v2ray-core/releases"
+    ],
+    "checkver": {
+        "github": "https://github.com/2dust/v2rayN"
+    },
+    "autoupdate": {
+        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.exe#/v2rayN.exe"
+    }
+}

@@ -1,14 +1,13 @@
 {
-    "version": "2018.1.4",
+    "version": "2018.2.2",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-2018.1.4.zip",
-    "hash": "086975da9508c42a8fe925e46e214a25e2c7efa05287581d8f959e555974fee1",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-2018.2.2.exe#/dl.7z",
+    "hash": "b80e4229582ccdadbd221165cc4d1dbdd663439bbb0714b64518d4c284a8c2a1",
     "env_add_path": "bin",
     "notes": "Please restart your command line for changes to take effect.",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\pycharm64.exe",
                 [
                     "bin\\pycharm64.exe",
                     "pycharm"
@@ -17,16 +16,21 @@
             "shortcuts": [
                 [
                     "bin/pycharm64.exe",
-                    "IDEA PyCharm Professional"
+                    "PyCharm64"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\pycharm.exe",
+            "bin": [
+                [
+                    "bin\\pycharm.exe",
+                    "pycharm"
+                ]
+            ],
             "shortcuts": [
                 [
                     "bin/pycharm.exe",
-                    "IDEA PyCharm Professional"
+                    "PyCharm"
                 ]
             ]
         }
@@ -36,9 +40,9 @@
         "jp": "$..version"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/python/pycharm-professional-$version.zip",
+        "url": "https://download.jetbrains.com/python/pycharm-professional-$version.exe#/dl.7z",
         "hash": {
-            "url": "$url.sha256"
+            "url": "https://download.jetbrains.com/python/pycharm-professional-$version.exe.sha256"
         }
     }
 }
