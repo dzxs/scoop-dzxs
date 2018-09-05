@@ -13,3 +13,8 @@ scoop bucket add dzxs https://github.com/dzxs/scoop-dzxs
 scoop bucket list # -> you should see 'dzxs'
 ```
 
+#### 记一下
+```
+scoop cache rm * # 清空所有缓存
+scoop cleanup * # 删除所有app的旧版本
+```
