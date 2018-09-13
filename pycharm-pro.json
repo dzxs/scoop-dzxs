@@ -1,8 +1,8 @@
 {
-    "version": "2018.2.2",
+    "version": "2018.2.3",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-2018.2.2.exe#/dl.7z",
-    "hash": "b80e4229582ccdadbd221165cc4d1dbdd663439bbb0714b64518d4c284a8c2a1",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-2018.2.3.exe#/dl.7z",
+    "hash": "2886351088ff1de3beb92cd9749f7a1160d7933e425ec1eca264bac411961411",
     "env_add_path": "bin",
     "notes": "Please restart your command line for changes to take effect.",
     "architecture": {
