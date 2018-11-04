@@ -7,6 +7,7 @@
     },
     "url": "https://github.com/2dust/v2rayN/releases/download/2.17/v2rayN.zip",
     "hash": "97A10CECDB724794A44907BB0EC52CD0633421BEDCB6BA6D0ED241077FE7A04C",
+    "extract_dir": "v2rayN",
     "bin": "v2rayN.exe",
     "shortcuts": [
         [
