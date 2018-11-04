@@ -1,11 +1,11 @@
 {
     "homepage": "https://github.com/2dust/v2rayN",
-    "version": "2.16",
+    "version": "2.17",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
-    "url": "https://github.com/2dust/v2rayN/releases/download/2.16/v2rayN.exe#/v2rayN.exe",
+    "url": "https://github.com/2dust/v2rayN/releases/download/2.17/v2rayN.zip",
     "hash": "acd117a322e52985a4f5975aac0f84d1fca36aea70c2ccfbb9de2af580672f95",
     "bin": "v2rayN.exe",
     "shortcuts": [
@@ -15,7 +15,11 @@
         ]
     ],
     "persist": [
-        "guiNConfig.json"
+        "guiNConfig.json",
+        "v2ctl.exe",
+        "config.json",
+        "v2ray.exe",
+        "wv2ray.exe"
     ],
     "notes": [
         "Requirements:",
@@ -24,6 +28,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.exe#/v2rayN.exe"
+        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.zip"
     }
 }
