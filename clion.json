@@ -1,8 +1,8 @@
 {
-    "version": "2018.3.4",
+    "version": "2019.1",
     "homepage": "https://www.jetbrains.com/clion/",
-    "url": "https://download.jetbrains.com/cpp/CLion-2018.3.4.zip",
-    "hash": "090235f894f21d3f7329c63c92cc8c7901bb946543a8ef1f061a9f9b47902db0",
+    "url": "https://download.jetbrains.com/cpp/CLion-2019.1.win.zip",
+    "hash": "37b780f77b4dbe1b053d59bece055e605975a666abb6fb9f155e8bfe5fed396f",
     "bin": "bin\\clion.bat",
     "env_add_path": "bin",
     "notes": "Please restart your command line for changes to take effect.",
@@ -31,7 +31,7 @@
         "jp": "$..version"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/cpp/CLion-$version.zip",
+        "url": "https://download.jetbrains.com/cpp/CLion-$version.win.zip",
         "hash": {
             "url": "$url.sha256"
         }
