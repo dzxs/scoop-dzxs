@@ -1,13 +1,13 @@
 {
     "homepage": "https://github.com/2dust/v2rayN",
-    "version": "2.26",
+    "version": "2.29",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
-    "url": "https://github.com/2dust/v2rayN/releases/download/2.26/v2rayN.zip",
-    "hash": "b13189b4924bceba9a3940aeb279a0afe73c9fb16ac96efcb143b500125de91b",
-    "extract_dir": "v2rayN",
+    "url": "https://github.com/2dust/v2rayN/releases/download/2.29/v2rayN-Core.zip",
+    "hash": "d1d5e5fcd02b8325c2c6d6094b5b735c6f5550df67df2737932b051d0e657a84",
+    "extract_dir": "v2rayN-Core",
     "bin": "v2rayN.exe",
     "shortcuts": [
         [
@@ -17,18 +17,23 @@
     ],
     "persist": [
         "guiNConfig.json",
-        "v2ctl.exe",
         "config.json",
-        "v2ray.exe",
-        "wv2ray.exe"
+        "user-wininet.json"
     ],
     "notes": [
         "Requirements:",
         "Microsoft .NET Framework 4.5 or higher",
         "Project V core https://github.com/v2ray/v2ray-core/releases"
     ],
+    "pre_install": [
+        "foreach ($name in @('guiNConfig.json', 'config.json', 'user-wininet.json')) {",
+        "    if (!(Test-Path \"$persist_dir\\$name\")) {",
+        "        New-Item -Force -Path \"$dir\" -Name $name | Out-Null",
+        "    }",
+        "}"
+    ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN.zip"
+        "url": "https://github.com/2dust/v2rayN/releases/download/$version/v2rayN-Core.zip"
     }
 }
