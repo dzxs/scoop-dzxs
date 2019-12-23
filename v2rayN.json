@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/2dust/v2rayN",
-    "version": "2.45",
+    "version": "3.2",
     "license": {
         "identifier": "GPL-3.0",
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
-    "url": "https://github.com/2dust/v2rayN/releases/download/2.45/v2rayN-Core.zip",
-    "hash": "a91123b258bdd901d3f86d134c1b526fa1d4d37fcfdfd730a43650056a615b95",
+    "url": "https://github.com/2dust/v2rayN/releases/download/3.2/v2rayN-Core.zip",
+    "hash": "12d9a4b7682f1d3e9fa8a067e90534b0c685fa0f8f1c9f9969735cf7f3f9fcb9",
     "extract_dir": "v2rayN-Core",
     "bin": "v2rayN.exe",
     "shortcuts": [

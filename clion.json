@@ -1,8 +1,8 @@
 {
-    "version": "2019.2.4",
+    "version": "2019.3.2",
     "homepage": "https://www.jetbrains.com/clion/",
-    "url": "https://download.jetbrains.com/cpp/CLion-2019.2.4.win.zip",
-    "hash": "e376788d8e1560ba81e69d59844b68c7b4152e6b1fee65d7a9daa910b948296f",
+    "url": "https://download.jetbrains.com/cpp/CLion-2019.3.2.win.zip",
+    "hash": "15d5edd4daf09ebd265e38a325ddd7c4e660aa0cc67478f9b6767861f5d48f75",
     "bin": "bin\\clion.bat",
     "env_add_path": "bin",
     "notes": "Please restart your command line for changes to take effect.",
