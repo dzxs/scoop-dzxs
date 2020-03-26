@@ -1,8 +1,8 @@
 {
-    "version": "2019.3",
+    "version": "2019.3.4",
     "homepage": "https://www.jetbrains.com/go/",
-    "url": "https://download.jetbrains.com/go/goland-2019.3.exe#/dl.7z",
-    "hash": "5a76ccd7d87b7b91c79d926ad43ceb26669d833c2ae7dacf51a3a5b4aea236e5",
+    "url": "https://download.jetbrains.com/go/goland-2019.3.4.exe#/dl.7z",
+    "hash": "1ce496dec748d38374a29370cbfb52a0f0cf8e11999c04835ed688ffdd477380",
     "env_add_path": "bin",
     "notes": "Please restart your command line for changes to take effect.",
     "architecture": {
